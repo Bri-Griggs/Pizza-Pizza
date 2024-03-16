@@ -6,6 +6,7 @@
 
 - Header = Should return a header for your page with the name of the pizza company. Use a <header> as the containing div in the return, give it className "header".
 
+
 - Menu = Should essentially act as a container for the UL of your pizza components. It should return a <main> tag of className "menu" that contains your UL. Should use .map to automate the creation of the Pizza objects. The UL should have the className "pizzas".
 
 - Pizza = Should take in a prop for the current individual pizza's data to be used. Should return an <li> tag as the container for the pizza. The LI's styling should be of className pizza but if it's .soldOut is true then it should also have the sold-out class in it's className.

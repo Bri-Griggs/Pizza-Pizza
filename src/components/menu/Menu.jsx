@@ -1,3 +1,4 @@
+import Pizza from "../pizza/Pizza";
 
 const pizzaData = [
   {
@@ -43,3 +44,21 @@ const pizzaData = [
     soldOut: false,
   },
 ];
+
+function Menu() {
+  return (
+    <main className="menu">
+      <h2>Another one bites the crust</h2>
+      <p>
+        Authentic Italian cuisine. 6 creative dishes to choose from. All from
+        our stone oven, all organic, all delish!
+      </p>
+      <ul className="pizzas">
+        {pizzaData.map((pizza) => <Pizza pizzaList={pizza} />
+        )}
+      </ul>
+    </main>
+  );
+}
+
+export default Menu;
